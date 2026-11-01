@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Fabian Albeiro Manrique Rubio Yamileth Arguello Brenda Carolina Tique">
+
+<title>HISTORIAS, CONCEPTOS Y VARIABLES</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-c4e1171eb4281116019c604a711c5128.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-4b064ad5cf698f245b930d8c9ed74028.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #F2BF27;
+      }
+</style>
+<script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">HISTORIAS, CONCEPTOS Y VARIABLES</h1>
+            <p class="subtitle lead">TALLER_1A</p>
+                      </div>
+  </div>
+    
+  <div class="quarto-title-meta-author column-page-left">
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-heading">Afiliación</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author">Fabian Albeiro Manrique Rubio<br>Yamileth Arguello<br>Brenda Carolina Tique </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://www.esap.edu.co/">
+              Escuela Superior de Administración Pública
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta column-page-left">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">31 de octubre de 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#presentación" id="toc-presentación" class="nav-link active" data-scroll-target="#presentación"><span class="header-section-number">1</span> .Presentación</a></li>
+  <li><a href="#historia-de-la-estadística" id="toc-historia-de-la-estadística" class="nav-link" data-scroll-target="#historia-de-la-estadística"><span class="header-section-number">2</span> .Historia de la estadística</a></li>
+  <li><a href="#conceptos" id="toc-conceptos" class="nav-link" data-scroll-target="#conceptos"><span class="header-section-number">3</span> .Conceptos</a></li>
+  <li><a href="#variables-estadísticas-concepto-y-clasificación-según-su-naturaleza" id="toc-variables-estadísticas-concepto-y-clasificación-según-su-naturaleza" class="nav-link" data-scroll-target="#variables-estadísticas-concepto-y-clasificación-según-su-naturaleza"><span class="header-section-number">4</span> .Variables estadísticas: concepto y clasificación según su naturaleza</a></li>
+  <li><a href="#escalas-o-niveles-de-medición" id="toc-escalas-o-niveles-de-medición" class="nav-link" data-scroll-target="#escalas-o-niveles-de-medición"><span class="header-section-number">5</span> .Escalas o niveles de medición</a></li>
+  <li><a href="#aplicación-práctica-con-r" id="toc-aplicación-práctica-con-r" class="nav-link" data-scroll-target="#aplicación-práctica-con-r"><span class="header-section-number">6</span> .Aplicación práctica con R</a></li>
+  <li><a href="#ejercicios-de-aplicación" id="toc-ejercicios-de-aplicación" class="nav-link" data-scroll-target="#ejercicios-de-aplicación"><span class="header-section-number">7</span> .Ejercicios de aplicación</a></li>
+  <li><a href="#respuestas-orientadoras" id="toc-respuestas-orientadoras" class="nav-link" data-scroll-target="#respuestas-orientadoras"><span class="header-section-number">8</span> .Respuestas orientadoras</a></li>
+  <li><a href="#conclusiones" id="toc-conclusiones" class="nav-link" data-scroll-target="#conclusiones"><span class="header-section-number">9</span> .Conclusiones</a></li>
+  <li><a href="#referencias-y-materiales-de-consulta" id="toc-referencias-y-materiales-de-consulta" class="nav-link" data-scroll-target="#referencias-y-materiales-de-consulta"><span class="header-section-number">10</span> .Referencias y materiales de consulta</a></li>
+  <li><a href="#anexo.-comandos-básicos-de-r-utilizados" id="toc-anexo.-comandos-básicos-de-r-utilizados" class="nav-link" data-scroll-target="#anexo.-comandos-básicos-de-r-utilizados"><span class="header-section-number">11</span> .Anexo. Comandos básicos de R utilizados</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<div style="position:absolute; top:10px; right:10px;">
+<img src="Logo_Esap.png" width="150">
+</div>
+<style>
+body{
+  background-color:#DAF6E8;
+  font-size:130%;
+  text-align:justify;
+}
+</style>
+<section id="presentación" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> .Presentación</h1>
+<p>La estadística es una disciplina que permite convertir datos en información útil para describir fenómenos, reconocer patrones, contrastar afirmaciones y apoyar la toma de decisiones. Su aplicación abarca campos como la economía, la salud, la educación, las ciencias sociales, la ingeniería, la administración y las ciencias naturales.</p>
+<p>Este documento desarrolla cuatro ejes: (1) una síntesis histórica de la estadística; (2) sus conceptos fundamentales; (3) la definición y clasificación de las variables según su naturaleza; y (4) los niveles o escalas de medición. Se incorporan ejemplos y fragmentos de código en <strong>R</strong> para ilustrar cómo organizar y examinar datos.</p>
+</section>
+<section id="historia-de-la-estadística" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> .Historia de la estadística</h1>
+<p><strong>Orígenes y primeras necesidades de registro</strong></p>
+<p><img src="images/clipboard-2906540836.png" class="img-fluid"></p>
+<p>La estadística no apareció en un momento único ni fue creada de manera repentina. Surgió gradualmente, a partir de la necesidad de las comunidades y de los gobiernos de contar personas, animales, tierras, cosechas, bienes y recursos. Los registros permitían conocer la disponibilidad de recursos, organizar el trabajo, recaudar tributos y planificar actividades colectivas.</p>
+<p>En épocas remotas se utilizaron marcas, símbolos y representaciones gráficas sobre pieles, rocas, madera y paredes de cuevas para llevar cuentas. El material histórico suministrado también menciona signos grabados en construcciones prehistóricas de Cerdeña, interpretados como posibles registros de ganado y piezas de caza.</p>
+<p><strong>Aportes de las civilizaciones antiguas</strong></p>
+<p><img src="images/clipboard-2300488846.png" class="img-fluid"></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><em>Civilización o período</em></th>
+<th><em>Aporte</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Babilonia, hacia 3000 a. C.</td>
+<td>Uso de tablillas de arcilla para registrar en tablas la producción agrícola y los bienes vendidos o intercambiados.</td>
+</tr>
+<tr class="even">
+<td>Egipto antiguo</td>
+<td>Recolección de información sobre población y renta; realización periódica de censos y registros de movimientos poblacionales.</td>
+</tr>
+<tr class="odd">
+<td>Asiria</td>
+<td>Conservación de registros históricos, religiosos, productivos, contables, médicos y astronómicos en bibliotecas.</td>
+</tr>
+<tr class="even">
+<td>China antigua</td>
+<td>Realización de censos y recopilación de información agrícola, industrial y comercial.</td>
+</tr>
+<tr class="odd">
+<td>Grecia</td>
+<td>Registros relacionados con la distribución de tierras, los tributos, el servicio militar y los recursos disponibles.</td>
+</tr>
+<tr class="even">
+<td>Roma</td>
+<td>Recopilación sistemática de datos sobre población, territorio, rentas, nacimientos, defunciones, matrimonios y riquezas.</td>
+</tr>
+</tbody>
+</table>
+<p>Estos antecedentes muestran que, durante siglos, la actividad estadística estuvo estrechamente relacionada con la administración pública y la organización económica y militar.</p>
+<p><strong>La estadística en la Edad Media y en América</strong></p>
+<p>Durante la Edad Media europea disminuyó la actividad estadística sistemática en comparación con la tradición romana. El documento histórico destaca, entre otros registros, los inventarios de tierras vinculados a la Iglesia y los esfuerzos de Carlomagno y Guillermo el Conquistador por recuperar prácticas de registro.</p>
+<p>En América, el material resalta el sistema de los <strong>Incas</strong>. Mediante los <strong>quipus</strong>, conjuntos de cuerdas y nudos, registraban información sobre población y acontecimientos relevantes. Se mencionan datos como nacimientos, defunciones, edad y sexo de los habitantes de distintas provincias. Este ejemplo evidencia que las prácticas de registro y cuantificación también tuvieron desarrollos propios en las sociedades americanas.</p>
+<p><strong>Registros demográficos y desarrollo del análisis</strong></p>
+<p>A partir de los siglos XVI y XVII adquirieron importancia los registros de nacimientos y defunciones. El material señala que en Inglaterra se desarrollaron registros de mortalidad y que, en 1662, <em>John Graunt</em> publicó un análisis de las partidas de defunción de Londres. Su trabajo es presentado como un antecedente importante del análisis estadístico de la población.</p>
+<p>También se describe el aporte de <em>Gaspar Neumann</em>, quien examinó registros parroquiales para contrastar una creencia popular sobre la mortalidad en años terminados en siete. Sus resultados fueron utilizados posteriormente por <em>Edmond Halley</em> en el desarrollo de tablas de mortalidad, relevantes para el estudio de la duración de la vida y los seguros.</p>
+<p><strong>Probabilidad, método científico y ciencias sociales</strong></p>
+<p>Durante los siglos XVII y XVIII, matemáticos como <em>Bernoulli, Maseres, Lagrange y Laplace</em> contribuyeron al desarrollo de la teoría de la probabilidad. Inicialmente, algunos de sus usos se relacionaban con los juegos de azar; posteriormente, sus herramientas se extendieron a problemas científicos y a la evaluación de la incertidumbre.</p>
+<p>El material también destaca:</p>
+<ul>
+<li><strong>Sebastián Münster:</strong> recopilación de información sobre recursos nacionales, organización política, comercio y poder militar.</li>
+<li><strong>John Graunt:</strong> análisis de registros de mortalidad y elaboración de estimaciones demográficas.</li>
+<li><strong>Edmond Halley:</strong> aplicación de procedimientos cuantitativos al estudio de la mortalidad.</li>
+<li><strong>Jacques Quételet:</strong> impulso de la aplicación de métodos estadísticos a las ciencias sociales.</li>
+<li><strong>Laplace, Gauss y Legendre:</strong> contribuciones a la teoría de los errores de observación y al método de mínimos cuadrados, durante el desarrollo matemático de la estadística.</li>
+</ul>
+<p><strong>La estadística contemporánea y la informática</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3268247979.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>En la actualidad, la estadística se utiliza para describir, relacionar y analizar datos económicos, políticos, sociales, psicológicos, biológicos y físicos. El trabajo estadístico ya no se limita a reunir y tabular información: incluye interpretar resultados, evaluar la incertidumbre y comunicar conclusiones útiles.</p>
+<p>El desarrollo de los computadores transformó la disciplina al facilitar el procesamiento de grandes volúmenes de datos, la aplicación de métodos matemáticos y la producción de representaciones gráficas. Herramientas como <strong>R</strong> permiten realizar análisis reproducibles mediante código.</p>
+<p><strong>Síntesis de la evolución histórica</strong></p>
+<p>De acuerdo con las etapas presentadas en el material histórico, la evolución puede resumirse así:</p>
+<ol type="1">
+<li><strong>Etapa de los censos:</strong> Recuento de habitantes, bienes, tierras y recursos.</li>
+<li><strong>Etapa descriptiva o de aritmética política:</strong> Organización de registros y análisis de información relacionada con la población y el Estado.</li>
+<li><strong>Etapa de la estadística y el cálculo de probabilidades:</strong> Desarrollo de fundamentos matemáticos para analizar datos y estudiar fenómenos inciertos.</li>
+<li><strong>Etapa computacional:</strong> Uso de computadores y programas especializados para procesar, visualizar e interpretar conjuntos de datos cada vez mayores.</li>
+</ol>
+</section>
+<section id="conceptos" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> .Conceptos</h1>
+<p><strong>¿Qué es la estadística?</strong></p>
+<p><img src="images/clipboard-3412245154.png" class="img-fluid">La estadística es la ciencia que recoge, organiza, presenta, analiza e interpreta datos con el propósito de obtener información y apoyar una toma de decisiones más eficaz.</p>
+<p>Su proceso general puede representarse de la siguiente manera:</p>
+<ol type="1">
+<li>Definir el problema y el objetivo del estudio.</li>
+<li>Identificar la población de interés.</li>
+<li>Seleccionar la muestra, cuando no sea viable estudiar toda la población.</li>
+<li>Determinar qué variables se medirán y cómo se recogerán los datos.</li>
+<li>Organizar y depurar la información.</li>
+<li>Analizar los datos mediante tablas, gráficos y medidas estadísticas.</li>
+<li>Interpretar los resultados y comunicar las conclusiones.</li>
+</ol>
+<p><strong>Estadística descriptiva</strong></p>
+<p>La <strong>estadística descriptiva</strong> comprende métodos para organizar, resumir y presentar datos de manera informativa. Permite describir lo que se observa en el conjunto de datos estudiado.</p>
+<p>Entre sus herramientas se encuentran:</p>
+<ul>
+<li>Tablas de frecuencia.</li>
+<li>Gráficos de barras, sectores, histogramas y diagramas de caja.</li>
+<li>Medidas de tendencia central: media, mediana y moda.</li>
+<li>Medidas de dispersión: rango, varianza y desviación estándar.</li>
+<li>Medidas de posición, como cuartiles y percentiles.</li>
+</ul>
+<p><strong>Ejemplo:</strong> una universidad presenta una tabla y un gráfico con las calificaciones obtenidas por los estudiantes de un curso. El análisis describe los resultados del grupo observado, pero por sí solo no demuestra que todos los estudiantes de otras universidades tengan un comportamiento similar.</p>
+<p><strong>Estadística inferencial</strong></p>
+<p>La <strong>estadística inferencial</strong> utiliza información de una muestra para estimar, contrastar hipótesis o formular conclusiones acerca de una población. Sus conclusiones incorporan incertidumbre, porque se basan en una parte de la población y no necesariamente en todos sus integrantes.</p>
+<p>Algunas herramientas de la inferencia son:</p>
+<ul>
+<li>Estimación de parámetros.</li>
+<li>Intervalos de confianza.</li>
+<li>Pruebas de hipótesis.</li>
+<li>Modelos de regresión.</li>
+<li>Métodos de predicción.</li>
+</ul>
+<p><strong>Ejemplo:</strong> se encuesta a una muestra de votantes para estimar la proporción de apoyo a una propuesta en toda la población electoral. La estimación debe interpretarse considerando el diseño de muestreo y el margen de incertidumbre.</p>
+<p><strong>Diferencia entre estadística descriptiva e inferencial</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspecto</th>
+<th>Descriptiva</th>
+<th>Inferencial</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Propósito</td>
+<td>Describir y resumir los datos observados.</td>
+<td>Estimar o contrastar afirmaciones sobre una población.</td>
+</tr>
+<tr class="even">
+<td>Base de análisis</td>
+<td>Datos disponibles del grupo estudiado.</td>
+<td>Una muestra y un modelo o procedimiento inferencial.</td>
+</tr>
+<tr class="odd">
+<td>Resultados</td>
+<td>Tablas, gráficos y medidas descriptivas.</td>
+<td>Estimaciones, intervalos, pruebas y predicciones.</td>
+</tr>
+<tr class="even">
+<td>Alcance</td>
+<td>Se refiere principalmente a los datos analizados.</td>
+<td>Busca generalizar, con incertidumbre explícita, a una población.</td>
+</tr>
+</tbody>
+</table>
+<p>La estadística descriptiva y la inferencial son complementarias. Una descripción adecuada ayuda a comprender los datos antes de realizar inferencias.</p>
+<p><strong>Población</strong></p>
+<p>La <strong>población</strong> es el conjunto completo de individuos, objetos, unidades o mediciones que cumplen las características de interés para una investigación.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Todos los estudiantes matriculados en una universidad durante un período determinado.</li>
+<li>Todos los habitantes de un municipio.</li>
+<li>Todos los productos fabricados por una empresa durante un mes.</li>
+<li>Todos los pacientes atendidos en un hospital durante un año.</li>
+</ul>
+<p>La población debe delimitarse con claridad, indicando quiénes o qué elementos la integran, dónde y en qué período.</p>
+<p><strong>Muestra</strong></p>
+<p>La <strong>muestra</strong> es una parte de la población seleccionada para obtener información y estudiar el fenómeno de interés. Para que los resultados puedan generalizarse, la selección debe responder a un diseño apropiado y reducir, en lo posible, los sesgos.</p>
+<p>Se recurre al muestreo, entre otras razones, porque estudiar toda la población puede requerir demasiado tiempo y dinero, ser logísticamente difícil o implicar pruebas destructivas. El material introductorio ilustra estas limitaciones con el control de calidad de productos, los análisis de sangre y las pruebas de velocidad de vehículos.</p>
+<p><strong>Ejemplo:</strong> si una universidad tiene 8.000 estudiantes y se seleccionan 400 mediante un procedimiento de muestreo definido, los 8.000 estudiantes constituyen la población y los 400 seleccionados conforman la muestra.</p>
+<p><strong>Unidad de análisis, dato y variable</strong></p>
+<ul>
+<li><strong>Unidad de análisis:</strong> persona, objeto, institución, evento o elemento sobre el que se recoge información.</li>
+<li><strong>Dato:</strong> valor observado o registrado para una unidad de análisis.</li>
+<li><strong>Variable:</strong> característica que puede tomar distintos valores entre las unidades de análisis.</li>
+</ul>
+<p>Ejemplo: en un estudio sobre estudiantes, cada estudiante es una unidad de análisis; la edad es una variable; y 21 años es un dato observado para uno de ellos.</p>
+<p><strong>Parámetro y estadístico</strong></p>
+<ul>
+<li><strong>Parámetro:</strong> medida numérica que describe una característica de una población, como la media poblacional.</li>
+<li><strong>Estadístico:</strong> medida calculada a partir de una muestra, como la media muestral.</li>
+</ul>
+<p>La inferencia estadística utiliza estadísticos muestrales para obtener información sobre parámetros poblacionales.</p>
+<p><strong>Instrumentos y fuentes de recolección de datos</strong></p>
+<p>El material introductorio enumera instrumentos y procedimientos como:</p>
+<ul>
+<li>Encuestas.</li>
+<li>Entrevistas.</li>
+<li>Cuestionarios.</li>
+<li>Observación.</li>
+<li>Registros de control de calidad.</li>
+<li>Reportes de producción.</li>
+</ul>
+<p>La elección depende del objetivo, la población, la variable y las condiciones de recolección. Un instrumento debe recoger información pertinente y de manera consistente.</p>
+</section>
+<section id="variables-estadísticas-concepto-y-clasificación-según-su-naturaleza" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> .Variables estadísticas: concepto y clasificación según su naturaleza</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3717848303.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><strong>¿Qué es una variable?</strong></p>
+<p>Una <strong>variable estadística</strong> es una característica de las unidades de análisis que puede adoptar diferentes valores o categorías. En un estudio, la información recolectada se almacena y organiza mediante variables para facilitar su clasificación, análisis y presentación.</p>
+<p>Ejemplos de variables:</p>
+<ul>
+<li>Edad de los estudiantes.</li>
+<li>Estatura de una persona.</li>
+<li>Estado civil.</li>
+<li>Tipo de automóvil.</li>
+<li>Número de libros en una biblioteca.</li>
+<li>Temperatura de un paciente.</li>
+</ul>
+<p>Es importante distinguir entre el nombre de la variable y el valor que toma. Por ejemplo, <code>estatura</code> es la variable y <code>1.68 metros</code> es uno de sus posibles valores.</p>
+<p><strong>Clasificación según su naturaleza</strong></p>
+<p>Según el material <em>Variables, niveles de medición</em>, las variables se clasifican en <strong>cualitativas</strong> y <strong>cuantitativas</strong>. Las cuantitativas se subdividen en <strong>discretas</strong> y <strong>continuas</strong>.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A["Variables estadísticas"] --&gt; B["Cualitativas"]
+    A --&gt; C["Cuantitativas"]
+    C --&gt; D["Discretas"]
+    C --&gt; E["Continuas"]
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><strong>Variables cualitativas</strong></p>
+<p>Las variables <strong>cualitativas</strong>, también denominadas variables de atributo, describen cualidades, categorías o características no expresadas como cantidades medibles.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Estado civil: soltero, casado, viudo, separado.</li>
+<li>Tipo de automóvil: automóvil, camioneta, camión.</li>
+<li>Marca de computador: Dell, HP, Apple, Lenovo.</li>
+<li>Color de ojos: café, verde, azul.</li>
+<li>Tipo de vivienda: casa, apartamento, habitación.</li>
+</ul>
+<p>Una variable puede estar codificada con números y seguir siendo cualitativa. Por ejemplo, si se registra <code>1 = soltero</code>, <code>2 = casado</code> y <code>3 = viudo</code>, los números son etiquetas de categorías: no representan cantidades ni permiten afirmar que 3 sea más que 1.</p>
+<p>Las variables cualitativas pueden ser:</p>
+<ul>
+<li><strong>Nominales:</strong> sus categorías no tienen un orden inherente. Ejemplo: tipo de automóvil o grupo sanguíneo.</li>
+<li><strong>Ordinales:</strong> sus categorías tienen un orden significativo. Ejemplo: nivel de satisfacción (bajo, medio, alto).</li>
+</ul>
+<p><strong>Variables cuantitativas</strong></p>
+<p>Las variables <strong>cuantitativas</strong> expresan cantidades mediante números y representan conteos o mediciones. El material de apoyo señala ejemplos como edad, estatura, saldo, número de unidades producidas, litros vendidos y calificaciones.</p>
+<p>Se clasifican en discretas y continuas.</p>
+<p><em>Variables cuantitativas discretas</em></p>
+<p>Son variables que resultan de contar elementos. Generalmente toman valores enteros dentro de un conjunto de valores posibles.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Número de estudiantes de un salón.</li>
+<li>Cantidad de camas de un hospital.</li>
+<li>Número de libros de una biblioteca.</li>
+<li>Cantidad de vehículos que ingresan a una ciudad.</li>
+<li>Número de cajas producidas en un turno.</li>
+</ul>
+<p>No tiene sentido registrar 2,5 estudiantes o 4,7 camas en un conteo de unidades individuales.</p>
+<p><em>Variables cuantitativas continuas</em></p>
+<p>Son variables que resultan de medir una magnitud y que, conceptualmente, pueden tomar cualquier valor dentro de un intervalo, según la precisión del instrumento.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Estatura y peso.</li>
+<li>Temperatura corporal.</li>
+<li>Presión arterial.</li>
+<li>Volumen de agua.</li>
+<li>Longitud de un río.</li>
+<li>Tiempo empleado en completar una actividad.</li>
+</ul>
+<p>Una medición puede registrarse con distintos niveles de precisión. Por ejemplo, una estatura puede anotarse como 1,7 m, 1,72 m o 1,723 m.</p>
+<p><strong>Cuadro comparativo de la naturaleza de las variables</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Definición</th>
+<th>Pregunta orientadora</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cualitativa</td>
+<td>Describe categorías o atributos.</td>
+<td>¿Qué tipo o categoría?</td>
+<td>Estado civil, color, marca.</td>
+</tr>
+<tr class="even">
+<td>Cuantitativa discreta</td>
+<td>Cuenta unidades separadas.</td>
+<td>¿Cuántos?</td>
+<td>Número de hijos, libros o vehículos.</td>
+</tr>
+<tr class="odd">
+<td>Cuantitativa continua</td>
+<td>Mide una magnitud.</td>
+<td>¿Cuánto mide, pesa o dura?</td>
+<td>Estatura, peso, temperatura y tiempo.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Criterio práctico:</strong> si los valores representan nombres o categorías, la variable es cualitativa. Si representan cantidades, es cuantitativa. Si se cuentan unidades, suele ser discreta; si se mide una magnitud, suele ser continua.</p>
+</section>
+<section id="escalas-o-niveles-de-medición" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> .Escalas o niveles de medición</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-1678138804.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><strong>¿Qué es una escala de medición?</strong></p>
+<p>La escala o nivel de medición indica qué propiedades tienen los valores de una variable y qué comparaciones u operaciones son válidas. Elegir correctamente el nivel de medición permite seleccionar resúmenes, gráficos y procedimientos estadísticos adecuados.</p>
+<p>Los cuatro niveles clásicos son <strong>nominal, ordinal, intervalo y razón</strong>.</p>
+<p><strong>Nivel nominal</strong></p>
+<p>El nivel <strong>nominal</strong> clasifica las observaciones en categorías que no tienen un orden natural. Su propósito es identificar y contar categorías.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Tipo de sangre.</li>
+<li>Estado civil.</li>
+<li>Marca de vehículo.</li>
+<li>Municipio de residencia.</li>
+<li>Tipo de vivienda.</li>
+</ul>
+<p>Los códigos numéricos que se asignen a las categorías no cambian su naturaleza. Si se codifica <code>1 = casa</code>, <code>2 = apartamento</code> y <code>3 = habitación</code>, no significa que una categoría sea mayor que otra.</p>
+<p><strong>Análisis habitual:</strong> frecuencias absolutas y relativas, porcentajes, moda y gráficos de barras o sectores.</p>
+<p><strong>Nivel ordinal</strong></p>
+<p>El nivel <strong>ordinal</strong> agrupa categorías que pueden ordenarse, pero las distancias entre categorías no necesariamente son iguales o conocidas.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Nivel educativo: primaria, secundaria, superior.</li>
+<li>Satisfacción: baja, media, alta.</li>
+<li>Nivel de riesgo: bajo, moderado, alto.</li>
+<li>Posición en una competencia: primero, segundo, tercero.</li>
+</ul>
+<p>El orden aporta información, pero no permite asumir que la diferencia entre bajo y medio sea igual a la diferencia entre medio y alto.</p>
+<p><strong>Análisis habitual:</strong> frecuencias, porcentajes, moda, mediana, percentiles y métodos no paramétricos apropiados.</p>
+<p><strong>Nivel de intervalo</strong></p>
+<p>El nivel <strong>de intervalo</strong> presenta valores ordenados en los que las diferencias iguales representan diferencias iguales en la característica medida. Sin embargo, el cero es convencional o arbitrario y no indica ausencia absoluta de la característica.</p>
+<p>Ejemplo: temperatura en grados Celsius. La diferencia entre 10 °C y 20 °C es igual a la diferencia entre 20 °C y 30 °C, pero 0 °C no significa ausencia de temperatura. Por ello, no es correcto afirmar que 20 °C representa el doble de temperatura que 10 °C.</p>
+<p>Otros ejemplos que suelen tratarse como escalas de intervalo son ciertas puntuaciones estandarizadas, bajo los supuestos propios de su construcción.</p>
+<p><strong>Análisis habitual:</strong> media, desviación estándar, diferencias y correlaciones, siempre que el diseño y los supuestos del análisis lo permitan. Las razones entre valores no tienen interpretación directa.</p>
+<p><strong>Nivel de razón</strong></p>
+<p>El nivel <strong>de razón</strong> posee las propiedades de orden y de intervalos iguales, además de un cero absoluto que representa ausencia de la cantidad medida. Por ello, las diferencias y las razones tienen interpretación.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>Peso.</li>
+<li>Estatura o longitud.</li>
+<li>Distancia recorrida.</li>
+<li>Duración o tiempo transcurrido.</li>
+<li>Edad medida como tiempo desde el nacimiento.</li>
+<li>Número de unidades producidas.</li>
+<li>Ingresos, cuando se miden en una escala monetaria con cero significativo.</li>
+</ul>
+<p>Por ejemplo, 10 kg representan el doble de masa que 5 kg. En cambio, esa interpretación de doble no es válida para grados Celsius.</p>
+<p><strong>Análisis habitual:</strong> admite operaciones aritméticas y una amplia variedad de resúmenes y modelos, según el contexto.</p>
+<p><strong>Comparación de las cuatro escalas</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th style="text-align: right;">Clasifica</th>
+<th style="text-align: right;">Ordena</th>
+<th style="text-align: right;">Diferencias iguales</th>
+<th style="text-align: right;">Cero absoluto</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">No aplica</td>
+<td>Grupo sanguíneo</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">No necesariamente</td>
+<td style="text-align: right;">No aplica</td>
+<td>Satisfacción baja, media, alta</td>
+</tr>
+<tr class="odd">
+<td>Intervalo</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">No</td>
+<td>Temperatura en °C</td>
+</tr>
+<tr class="even">
+<td>Razón</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td style="text-align: right;">Sí</td>
+<td>Peso en kg</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relación entre naturaleza y escala de medición</strong></p>
+<p>La naturaleza de una variable y su escala de medición son dos criterios relacionados, pero no equivalentes:</p>
+<ul>
+<li>Las variables cualitativas suelen medirse en escala nominal u ordinal.</li>
+<li>Las variables cuantitativas pueden medirse en escala de intervalo o de razón.</li>
+<li>Una variable codificada con números no necesariamente es cuantitativa.</li>
+<li>La clasificación depende del significado de los valores y de la forma en que se obtuvo la información.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Naturaleza</th>
+<th>Escala de medición</th>
+<th>Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Tipo de sangre</td>
+<td>Cualitativa</td>
+<td>Nominal</td>
+<td>Categorías sin orden.</td>
+</tr>
+<tr class="even">
+<td>Nivel de satisfacción</td>
+<td>Cualitativa</td>
+<td>Ordinal</td>
+<td>Categorías ordenables.</td>
+</tr>
+<tr class="odd">
+<td>Temperatura en °C</td>
+<td>Cuantitativa continua</td>
+<td>Intervalo</td>
+<td>Diferencias interpretables; cero no absoluto.</td>
+</tr>
+<tr class="even">
+<td>Peso en kg</td>
+<td>Cuantitativa continua</td>
+<td>Razón</td>
+<td>Cero absoluto y razones interpretables.</td>
+</tr>
+<tr class="odd">
+<td>Número de hijos</td>
+<td>Cuantitativa discreta</td>
+<td>Razón</td>
+<td>Conteo con cero significativo.</td>
+</tr>
+<tr class="even">
+<td>Posición en una carrera</td>
+<td>Cualitativa ordinal</td>
+<td>Ordinal</td>
+<td>Expresa orden, no distancia entre posiciones.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aplicación-práctica-con-r" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> .Aplicación práctica con R</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-248428695.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>R es un lenguaje y entorno de programación para el análisis estadístico y la visualización de datos. En esta sección se construye una base de datos pequeña, se identifican variables y se realizan operaciones descriptivas básicas.</p>
+<p><strong>Crear una base de datos de ejemplo</strong></p>
+<p>El siguiente conjunto de datos es <strong>simulado</strong> y tiene fines didácticos. Cada fila representa un estudiante.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>estudiantes <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">programa =</span> <span class="fu">c</span>(<span class="st">"Administración"</span>, <span class="st">"Matemáticas"</span>, <span class="st">"Administración"</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>               <span class="st">"Derecho"</span>, <span class="st">"Matemáticas"</span>, <span class="st">"Derecho"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               <span class="st">"Administración"</span>, <span class="st">"Derecho"</span>, <span class="st">"Matemáticas"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>               <span class="st">"Administración"</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">nivel_satisfaccion =</span> <span class="fu">c</span>(<span class="st">"Alto"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>, <span class="st">"Bajo"</span>, <span class="st">"Medio"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"Alto"</span>, <span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>, <span class="st">"Medio"</span>),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">edad =</span> <span class="fu">c</span>(<span class="dv">19</span>, <span class="dv">22</span>, <span class="dv">21</span>, <span class="dv">25</span>, <span class="dv">20</span>, <span class="dv">23</span>, <span class="dv">24</span>, <span class="dv">19</span>, <span class="dv">22</span>, <span class="dv">26</span>),</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">numero_hijos =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>),</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">estatura_m =</span> <span class="fu">c</span>(<span class="fl">1.62</span>, <span class="fl">1.75</span>, <span class="fl">1.68</span>, <span class="fl">1.71</span>, <span class="fl">1.59</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                 <span class="fl">1.80</span>, <span class="fl">1.66</span>, <span class="fl">1.73</span>, <span class="fl">1.64</span>, <span class="fl">1.77</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">temperatura_c =</span> <span class="fu">c</span>(<span class="fl">36.5</span>, <span class="fl">36.7</span>, <span class="fl">36.6</span>, <span class="fl">37.0</span>, <span class="fl">36.4</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                     <span class="fl">36.8</span>, <span class="fl">36.6</span>, <span class="fl">36.5</span>, <span class="fl">36.9</span>, <span class="fl">36.7</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>estudiantes</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>   id       programa nivel_satisfaccion edad numero_hijos estatura_m
+1   1 Administración               Alto   19            0       1.62
+2   2    Matemáticas              Medio   22            1       1.75
+3   3 Administración               Alto   21            0       1.68
+4   4        Derecho               Bajo   25            2       1.71
+5   5    Matemáticas              Medio   20            0       1.59
+6   6        Derecho               Alto   23            1       1.80
+7   7 Administración               Bajo   24            1       1.66
+8   8        Derecho              Medio   19            0       1.73
+9   9    Matemáticas               Alto   22            0       1.64
+10 10 Administración              Medio   26            2       1.77
+   temperatura_c
+1           36.5
+2           36.7
+3           36.6
+4           37.0
+5           36.4
+6           36.8
+7           36.6
+8           36.5
+9           36.9
+10          36.7</code></pre>
+</div>
+</div>
+<p><strong>Identificar la naturaleza y la escala de las variables</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Naturaleza</th>
+<th>Escala</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>id</code></td>
+<td>Cualitativa identificadora</td>
+<td>Nominal</td>
+<td>El número identifica al estudiante; no mide una cantidad.</td>
+</tr>
+<tr class="even">
+<td><code>programa</code></td>
+<td>Cualitativa</td>
+<td>Nominal</td>
+<td>Sus categorías no tienen orden.</td>
+</tr>
+<tr class="odd">
+<td><code>nivel_satisfaccion</code></td>
+<td>Cualitativa</td>
+<td>Ordinal</td>
+<td>Bajo, medio y alto tienen orden.</td>
+</tr>
+<tr class="even">
+<td><code>edad</code></td>
+<td>Cuantitativa</td>
+<td>Razón</td>
+<td>El cero representa ausencia de tiempo vivido; aquí se registra en años cumplidos.</td>
+</tr>
+<tr class="odd">
+<td><code>numero_hijos</code></td>
+<td>Cuantitativa discreta</td>
+<td>Razón</td>
+<td>Es un conteo con cero significativo.</td>
+</tr>
+<tr class="even">
+<td><code>estatura_m</code></td>
+<td>Cuantitativa continua</td>
+<td>Razón</td>
+<td>Es una medición con cero absoluto conceptual.</td>
+</tr>
+<tr class="odd">
+<td><code>temperatura_c</code></td>
+<td>Cuantitativa continua</td>
+<td>Intervalo</td>
+<td>El cero Celsius no representa ausencia de temperatura.</td>
+</tr>
+</tbody>
+</table>
+<p>El identificador <code>id</code> merece atención: aunque está escrito con números, funciona como una etiqueta. No debe calcularse su promedio para describir a los estudiantes.</p>
+<p><strong>Convertir variables a factores en R</strong></p>
+<p>En R, las variables categóricas pueden representarse mediante el tipo <code>factor</code>. Para las categorías ordenadas se puede especificar el orden de sus niveles.</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>estudiantes<span class="sc">$</span>programa <span class="ot">&lt;-</span> <span class="fu">factor</span>(estudiantes<span class="sc">$</span>programa)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>estudiantes<span class="sc">$</span>nivel_satisfaccion <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  estudiantes<span class="sc">$</span>nivel_satisfaccion,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Bajo"</span>, <span class="st">"Medio"</span>, <span class="st">"Alto"</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">ordered =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(estudiantes)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   10 obs. of  7 variables:
+ $ id                : int  1 2 3 4 5 6 7 8 9 10
+ $ programa          : Factor w/ 3 levels "Administración",..: 1 3 1 2 3 2 1 2 3 1
+ $ nivel_satisfaccion: Ord.factor w/ 3 levels "Bajo"&lt;"Medio"&lt;..: 3 2 3 1 2 3 1 2 3 2
+ $ edad              : num  19 22 21 25 20 23 24 19 22 26
+ $ numero_hijos      : num  0 1 0 2 0 1 1 0 0 2
+ $ estatura_m        : num  1.62 1.75 1.68 1.71 1.59 1.8 1.66 1.73 1.64 1.77
+ $ temperatura_c     : num  36.5 36.7 36.6 37 36.4 36.8 36.6 36.5 36.9 36.7</code></pre>
+</div>
+</div>
+<p>La función <code>str()</code> permite revisar la estructura de la base de datos y el tipo de cada columna.</p>
+<p><strong>Frecuencias para variables cualitativas</strong></p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Frecuencia absoluta por programa</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(estudiantes<span class="sc">$</span>programa)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Administración        Derecho    Matemáticas 
+             4              3              3 </code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Frecuencia relativa por programa</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(<span class="fu">table</span>(estudiantes<span class="sc">$</span>programa))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Administración        Derecho    Matemáticas 
+           0.4            0.3            0.3 </code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Frecuencia de los niveles de satisfacción</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(estudiantes<span class="sc">$</span>nivel_satisfaccion)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Bajo Medio  Alto 
+    2     4     4 </code></pre>
+</div>
+</div>
+<p>Para expresar las frecuencias relativas como porcentajes:</p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> <span class="fu">prop.table</span>(<span class="fu">table</span>(estudiantes<span class="sc">$</span>programa)), <span class="dv">1</span>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Administración        Derecho    Matemáticas 
+            40             30             30 </code></pre>
+</div>
+</div>
+<p><strong>Resumen de variables cuantitativas</strong></p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Resumen general de la base</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(estudiantes)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>       id                  programa nivel_satisfaccion      edad      
+ Min.   : 1.00   Administración:4   Bajo :2            Min.   :19.00  
+ 1st Qu.: 3.25   Derecho       :3   Medio:4            1st Qu.:20.25  
+ Median : 5.50   Matemáticas   :3   Alto :4            Median :22.00  
+ Mean   : 5.50                                         Mean   :22.10  
+ 3rd Qu.: 7.75                                         3rd Qu.:23.75  
+ Max.   :10.00                                         Max.   :26.00  
+  numero_hijos   estatura_m    temperatura_c  
+ Min.   :0.0   Min.   :1.590   Min.   :36.40  
+ 1st Qu.:0.0   1st Qu.:1.645   1st Qu.:36.52  
+ Median :0.5   Median :1.695   Median :36.65  
+ Mean   :0.7   Mean   :1.695   Mean   :36.67  
+ 3rd Qu.:1.0   3rd Qu.:1.745   3rd Qu.:36.77  
+ Max.   :2.0   Max.   :1.800   Max.   :37.00  </code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Media de edad</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(estudiantes<span class="sc">$</span>edad)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 22.1</code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mediana de estatura</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">median</span>(estudiantes<span class="sc">$</span>estatura_m)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.695</code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Desviación estándar de la edad</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(estudiantes<span class="sc">$</span>edad)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.424413</code></pre>
+</div>
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mínimo y máximo de temperatura</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(estudiantes<span class="sc">$</span>temperatura_c)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 36.4 37.0</code></pre>
+</div>
+</div>
+<p>Estas medidas describen únicamente los diez registros simulados. No deben interpretarse como estimaciones de una población real.</p>
+<p><strong>Representaciones gráficas</strong></p>
+<p><em>Gráfico de barras: programa académico</em></p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">table</span>(estudiantes<span class="sc">$</span>programa),</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Estudiantes por programa académico"</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Programa"</span>,</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Número de estudiantes"</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Histograma: edad</em></p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  estudiantes<span class="sc">$</span>edad,</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribución de las edades"</span>,</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Edad (años)"</span>,</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Frecuencia"</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Diagrama de caja: estatura</em></p>
+<div class="cell" data-layout-align="center">
+<details class="code-fold">
+<summary>Ver código</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  estudiantes<span class="sc">$</span>estatura_m,</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">main =</span> <span class="st">"Distribución de la estatura"</span>,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Estatura (metros)"</span></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>La selección del gráfico depende del tipo de variable: las barras son útiles para categorías; los histogramas y diagramas de caja se utilizan habitualmente para variables cuantitativas.</p>
+</section>
+<section id="ejercicios-de-aplicación" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> .Ejercicios de aplicación</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-775285174.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="442"></p>
+</figure>
+</div>
+<p><strong>Ejercicio 1. Clasificación según la naturaleza</strong></p>
+<p>Clasifique cada variable como cualitativa, cuantitativa discreta o cuantitativa continua.</p>
+<ol type="1">
+<li>Marca de los vehículos que ingresan a un parqueadero.</li>
+<li>Número de estudiantes matriculados en una institución.</li>
+<li>Temperatura de los pacientes de un hospital.</li>
+<li>Estado civil de los habitantes de un municipio.</li>
+<li>Litros de agua consumidos por una familia.</li>
+<li>Cantidad de libros de una biblioteca.</li>
+<li>Estatura de los estudiantes de un curso.</li>
+<li>Nivel de satisfacción con un servicio.</li>
+</ol>
+<p><strong>Ejercicio 2. Identificación de la escala de medición</strong></p>
+<p>Determine si cada variable corresponde a una escala nominal, ordinal, de intervalo o de razón.</p>
+<ol type="1">
+<li>Grupo sanguíneo.</li>
+<li>Nivel educativo alcanzado.</li>
+<li>Temperatura en grados Celsius.</li>
+<li>Distancia recorrida en kilómetros.</li>
+<li>Número de llamadas recibidas en un día.</li>
+<li>Posición obtenida en una competencia.</li>
+<li>Tiempo de duración de una llamada.</li>
+<li>Tipo de vivienda.</li>
+</ol>
+<p><strong>Ejercicio 3. Población y muestra</strong></p>
+<p>Una institución universitaria cuenta con 5.000 estudiantes y desea conocer el tiempo semanal que dedican al estudio. Para ello, selecciona 250 estudiantes mediante un procedimiento de muestreo.</p>
+<p>Responda:</p>
+<ol type="1">
+<li>¿Cuál es la población?</li>
+<li>¿Cuál es la muestra?</li>
+<li>¿Cuál es la unidad de análisis?</li>
+<li>¿Cuál es la variable principal?</li>
+<li>¿La variable tiempo semanal de estudio es cualitativa o cuantitativa?</li>
+<li>¿Qué escala de medición corresponde al tiempo de estudio?</li>
+</ol>
+<p><strong>Ejercicio 4. Descriptiva o inferencial</strong></p>
+<p>Indique si cada situación corresponde principalmente a estadística descriptiva o inferencial.</p>
+<ol type="1">
+<li>Calcular el promedio de calificaciones de todos los estudiantes de un curso.</li>
+<li>Encuestar una muestra de hogares para estimar el gasto promedio de todos los hogares de una ciudad.</li>
+<li>Elaborar un gráfico con las ventas mensuales registradas por una tienda.</li>
+<li>Utilizar una muestra de pacientes para estimar la proporción de personas con una condición en una población.</li>
+</ol>
+</section>
+<section id="respuestas-orientadoras" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> .Respuestas orientadoras</h1>
+<p><strong>Ejercicio 1</strong></p>
+<ol type="1">
+<li>Cualitativa.</li>
+<li>Cuantitativa discreta.</li>
+<li>Cuantitativa continua.</li>
+<li>Cualitativa.</li>
+<li>Cuantitativa continua.</li>
+<li>Cuantitativa discreta.</li>
+<li>Cuantitativa continua.</li>
+<li>Cualitativa ordinal.</li>
+</ol>
+<p><strong>Ejercicio 2</strong></p>
+<ol type="1">
+<li>Nominal.</li>
+<li>Ordinal.</li>
+<li>Intervalo.</li>
+<li>Razón.</li>
+<li>Razón.</li>
+<li>Ordinal.</li>
+<li>Razón.</li>
+<li>Nominal.</li>
+</ol>
+<p><strong>Ejercicio 3</strong></p>
+<ol type="1">
+<li>Población: los 5.000 estudiantes de la institución.</li>
+<li>Muestra: los 250 estudiantes seleccionados.</li>
+<li>Unidad de análisis: cada estudiante.</li>
+<li>Variable principal: tiempo semanal dedicado al estudio.</li>
+<li>Cuantitativa continua, si se registra como una duración medible.</li>
+<li>Razón, porque el tiempo transcurrido tiene cero absoluto y permite comparar proporciones.</li>
+</ol>
+<p><strong>Ejercicio 4</strong></p>
+<ol type="1">
+<li>Descriptiva, porque resume las calificaciones del curso observado.</li>
+<li>Inferencial, porque utiliza una muestra para estimar una característica de todos los hogares.</li>
+<li>Descriptiva, porque presenta los registros de ventas observados.</li>
+<li>Inferencial, porque estima una proporción poblacional a partir de una muestra.</li>
+</ol>
+</section>
+<section id="conclusiones" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> .Conclusiones</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-785730327.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>La estadística evolucionó desde prácticas elementales de conteo y registro hasta convertirse en una disciplina científica apoyada en la probabilidad, los métodos matemáticos y las herramientas computacionales. Su finalidad no consiste únicamente en acumular datos, sino en transformarlos en información que permita comprender fenómenos y tomar decisiones fundamentadas.</p>
+<p>Los conceptos de población, muestra, unidad de análisis, dato y variable constituyen la base de cualquier estudio estadístico. Distinguir entre estadística descriptiva e inferencial permite reconocer el alcance de los resultados y evitar generalizaciones que los datos no respaldan.</p>
+<p>La clasificación de las variables según su naturaleza —cualitativas y cuantitativas, estas últimas discretas o continuas— y según su escala de medición —nominal, ordinal, intervalo y razón— es esencial para elegir procedimientos de análisis adecuados. Una codificación numérica no convierte automáticamente una categoría en una cantidad medible: siempre debe considerarse el significado de los datos.</p>
+<p>Finalmente, R facilita la organización, descripción y visualización de datos mediante procedimientos reproducibles. El criterio estadístico, sin embargo, sigue siendo indispensable para definir las variables, seleccionar las técnicas y formular interpretaciones válidas.</p>
+</section>
+<section id="referencias-y-materiales-de-consulta" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> .Referencias y materiales de consulta</h1>
+<ul>
+<li>Salgado Horta, D. (s. f.). <em>Historia de la Estadística</em> [Material de apoyo de clase, 40 páginas].</li>
+<li>Salgado Horta, D. (2026). <em>Estadística: Introducción - tipos de datos. Período 2026-1</em> [Presentación de clase, 14 páginas].</li>
+<li>Salgado Horta, D. (2026). <em>Estadística: Variables, niveles de medición. Período 2026-1</em> [Presentación de clase, 20 páginas].</li>
+</ul>
+</section>
+<section id="anexo.-comandos-básicos-de-r-utilizados" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> .Anexo. Comandos básicos de R utilizados</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Función</th>
+<th>Utilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>data.frame()</code></td>
+<td>Crear una base de datos tabular.</td>
+</tr>
+<tr class="even">
+<td><code>str()</code></td>
+<td>Examinar la estructura de un objeto.</td>
+</tr>
+<tr class="odd">
+<td><code>summary()</code></td>
+<td>Obtener un resumen de variables.</td>
+</tr>
+<tr class="even">
+<td><code>table()</code></td>
+<td>Calcular frecuencias.</td>
+</tr>
+<tr class="odd">
+<td><code>prop.table()</code></td>
+<td>Calcular proporciones de una tabla.</td>
+</tr>
+<tr class="even">
+<td><code>mean()</code></td>
+<td>Calcular la media.</td>
+</tr>
+<tr class="odd">
+<td><code>median()</code></td>
+<td>Calcular la mediana.</td>
+</tr>
+<tr class="even">
+<td><code>sd()</code></td>
+<td>Calcular la desviación estándar muestral.</td>
+</tr>
+<tr class="odd">
+<td><code>range()</code></td>
+<td>Obtener mínimo y máximo.</td>
+</tr>
+<tr class="even">
+<td><code>barplot()</code></td>
+<td>Crear un gráfico de barras.</td>
+</tr>
+<tr class="odd">
+<td><code>hist()</code></td>
+<td>Crear un histograma.</td>
+</tr>
+<tr class="even">
+<td><code>boxplot()</code></td>
+<td>Crear un diagrama de caja.</td>
+</tr>
+<tr class="odd">
+<td><code>factor()</code></td>
+<td>Definir variables categóricas.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/clipboard-2191097748.png" class="img-fluid"></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
