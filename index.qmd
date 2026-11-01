@@ -1,6 +1,6 @@
 ---
 title: "HISTORIAS, CONCEPTOS Y VARIABLES"
-subtitle: "TALLER_1"
+subtitle: "TALLER_1A"
 author: 
   - name: Fabian Albeiro Manrique Rubio<br>Yamileth Arguello<br>Brenda Carolina Tique
     affiliation: "Escuela Superior de Administración Pública"
